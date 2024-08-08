@@ -17,8 +17,7 @@ PRODUCT_COPY_FILES += \
 # Overlay
 PRODUCT_PACKAGES += \
     Frameworks-Odin2Mini-Overlay \
-    LineageSDK-Odin2Mini-Overlay \
-    SettingsProvider-Odin2Mini-Overlay
+    LineageSDK-Odin2Mini-Overlay
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
