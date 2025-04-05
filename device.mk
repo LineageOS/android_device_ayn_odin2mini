@@ -3,9 +3,14 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.lineage
+
 # Overlay
 PRODUCT_PACKAGES += \
     Frameworks-Odin2Mini-Overlay \
+    LineageSDK-Odin2Mini-Overlay \
     SettingsProvider-Odin2Mini-Overlay
 
 # Soong namespaces
