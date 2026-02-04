@@ -21,6 +21,10 @@ namespace_imports = [
 blob_fixups: blob_fixups_user_type = {
     'vendor/etc/display/qdcm_calib_data_xm91080_video_mode_dsi_panel_without_DS.json': blob_fixup()
         .regex_replace('nt35532_video_mode_dsi_panel_without_DSC', 'xm91080_video_mode_dsi_panel_without_DSC'),
+    'vendor/etc/sensors/config/kailua_icm426xx_0.json': blob_fixup()
+        .regex_replace('"ver": "2"', '"ver": "3"')
+        .regex_replace('"data": "-y"', '"data": "+x"')
+        .regex_replace('"data": "-x"', '"data": "-y"'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
