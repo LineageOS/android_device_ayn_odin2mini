@@ -7,6 +7,10 @@
 PRODUCT_PACKAGES += \
     android.hardware.light-service.lineage
 
+# MCU
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/mcu/mcuapp_firmware.txt:$(TARGET_COPY_OUT_VENDOR)/firmware/mcuapp_firmware.txt
+
 # Overlay
 PRODUCT_PACKAGES += \
     Frameworks-Odin2Mini-Overlay \
